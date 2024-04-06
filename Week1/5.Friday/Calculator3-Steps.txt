@@ -1,0 +1,18 @@
+Formula: PV = PMT × [(1 - (1 + r)^(-n)) / r]
+
+Where:
+
+    PV is the present value of the annuity.
+    PMT is the monthly payout amount.
+    r is the monthly interest rate (annual interest rate divided by 12 and then divided by 100 to convert to a decimal).
+    n is the total number of monthly payments (number of years to pay out multiplied by 12).
+
+Accept the monthly payout amount (PMT), expected interest rate (r), and number of years to pay out (t) from the user as input.
+
+Calculate the monthly interest rate (r) by dividing the annual interest rate by 12 and then dividing by 100 to convert it to a decimal.
+
+Calculate the total number of monthly payments (n) by multiplying the number of years to pay out by 12.
+
+Use the formula to calculate the present value (PV) of the annuity.
+
+Display the present value of the annuity to the user.

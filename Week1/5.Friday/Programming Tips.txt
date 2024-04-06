@@ -1,0 +1,28 @@
+Programming Tips
+
+Do not overthink this! We are goingto assume the user is going to give us reasonable input.
+We haven't learned techniques to handle what happens if the user does something weird.
+So don't worry about it!
+
+You will need to use the scanner to get user input.
+
+Remember! The scanner has many different methods to handle if the user is going to give us
+a string, a double, an integer, etc.
+
+scanner.nextLine() is for strings
+scanner.nextInt() is for integers
+...and so forth
+
+A good strategy is to gather all of the different pieces of information from the user using the scanner,
+and THEN do your calculations.
+
+If you think about it, this project can really be broken down into three major steps:
+
+1. Ask the user a series of questions to get the data we need.
+2. Run the equation using the data we collected and get a result.
+3. Print the result to the screen.
+
+Also remember, just because you learned something does NOT mean that it must be applied to the project.
+The project uses some of the things we learned during the week, and doesn't require others. 
+For example, switch(case) may or may not be necessary for the project. If not, don't use it. 
+That's like real programming.

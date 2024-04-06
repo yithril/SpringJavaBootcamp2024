@@ -1,0 +1,2 @@
+If you are reading this, you were able to clone the classroom github repo
+and also to pull down files from Github!

@@ -1,0 +1,24 @@
+10/5 Instructions:
+
+    Create a new program in your Githup repo folder. 
+
+    Inside the main method of your project, do the following:
+
+    a. Create a Scanner object to read user input. You will need to import the java.util.Scanner class at the beginning of your program.
+
+    b. Prompt the user to enter the current weather by displaying the message: "How's the weather today? (Sunny, Cloudy, Rainy): "
+
+    c. Read the user's input as a String and store it in a variable (e.g., userInput).
+
+    d. Use if/else-if/else statements to check the value of userInput and provide the following responses based on the weather conditions:
+        If userInput is "Sunny" (case-insensitive), print: "It's a great day for outdoor activities!"
+        If userInput is "Cloudy" (case-insensitive), print: "The weather is a bit uncertain."
+        If userInput is "Rainy" (case-insensitive), print: "Don't forget your umbrella!"
+        If userInput doesn't match any of the above conditions, print: "Sorry, I'm not sure about that weather type."
+
+
+    Test your program by running it and entering different weather conditions as input. Make sure it provides the correct responses for each condition.
+
+    Try entering a weather condition that is not "Sunny," "Cloudy," or "Rainy" to see how your program handles it.
+
+    Once you've completed the program and tested it thoroughly, you're done!

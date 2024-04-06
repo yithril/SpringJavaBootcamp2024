@@ -1,0 +1,19 @@
+Accept the initial deposit (P), annual interest rate (r), and number of years (t) from the user as input.
+
+Calculate the daily interest rate (r) by dividing the annual interest rate by 365 to account for daily compounding.
+
+Use the following formula to calculate the future value (FV) of the deposit:
+
+FV = P(1 + r/n)^(n*t)
+
+    FV is the future value of the deposit.
+    P is the initial deposit amount.
+    r is the annual interest rate (in decimal form, e.g., 0.0175 for 1.75%).
+    n is the number of times the interest is compounded per year (assuming daily compounding, n would be 365).
+    t is the number of years the money is invested for.
+
+Use this formula to calculate the total interest earned.
+
+Total Interest = FV - P
+
+Display the future value and total interest earned to the user.

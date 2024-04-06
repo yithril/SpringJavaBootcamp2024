@@ -1,0 +1,24 @@
+Calculation Steps
+    
+Accept the principal (P), interest rate (r), and loan length (n) from the user as input.
+
+Calculate the monthly interest rate (r) by dividing the annual interest rate by 12 and then dividing by 100 to convert it to a decimal.
+
+Calculate the number of monthly payments (n) by multiplying the loan length in years by 12.
+
+Use this formula to calculate the monthly payment (M).
+
+M = P[r(1+r)^n] / [(1+r)^n-1]
+
+Where:
+
+    M is the monthly payment.
+    P is the principal amount (loan amount).
+    r is the monthly interest rate (annual interest rate divided by 12 and then divided by 100 to convert to a decimal).
+    n is the number of monthly payments (loan length in years multiplied by 12).
+
+Use this formula to calculate the total interest paid:
+
+Total Interest = (M * n) - P
+
+Display the monthly payment and total interest paid to the user.
