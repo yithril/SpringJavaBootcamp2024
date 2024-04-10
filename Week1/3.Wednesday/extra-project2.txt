@@ -1,0 +1,49 @@
+Text Adventure Game Project Instructions
+Introduction
+
+Welcome to the Text Adventure Game project! You're about to embark on a journey to create an interactive, text-based adventure game akin to classics like Zork. Your game will feature a navigable world, interactable items and characters, puzzles, and a story that unfolds based on the player's choices. This project is divided into stages, each with specific objectives. You'll have the opportunity to practice and apply various programming concepts, including object-oriented programming, parsing user input, managing game states, and more.
+Project Stages
+
+Stage 1: Game World Modeling
+
+    Objective: Create the foundational classes for your game, including rooms, items, and players.
+    Guidance: Explore using abstract classes, interfaces, and inheritance. Consider creating an Interactable interface for actions common to both items and NPCs.
+    Research Topics: Object-oriented programming in Java, abstract classes, interfaces, inheritance.
+
+Stage 2: Basic Movement and Interaction
+
+    Objective: Implement basic movement between rooms and item interaction.
+    Guidance: Start with simple string parsing for commands like "go" and "take." Use string methods to split and analyze the user input.
+    Research Topics: String manipulation in Java, basic input/output.
+
+Stage 3: Advanced Interactions and Puzzle Mechanics
+
+    Objective: Add puzzles or challenges that require items or actions to solve.
+    Guidance: Enhance command parsing to handle complex inputs. Optional: explore libraries for natural language processing.
+    Research Topics: Advanced string manipulation, conditional logic.
+    Suggested Package: Explore libraries such as OpenNLP or Stanford NLP for natural language parsing (optional).
+
+Stage 4: NPCs and Dialogue
+
+    Objective: Introduce NPCs with whom the player can interact.
+    Guidance: Use inheritance to create specific types of NPCs from a base class. Implement simple dialogue systems.
+    Research Topics: Inheritance, polymorphism, designing dialogue systems.
+
+Stage 5: Enhancing the Game World
+
+    Objective: Expand your game with more rooms, items, and story elements.
+    Guidance: Focus on narrative development and world-building. Consider abstracting common patterns in game elements.
+    Research Topics: Complex object-oriented design, narrative structure.
+
+Stage 6: Saving and Loading Game State
+
+    Objective: Implement saving and loading of the game state using JSON.
+    Guidance: Choose a JSON library for Java, such as Gson or Jackson, and learn how to serialize objects to JSON and deserialize them.
+    Research Topics: JSON in Java, serialization, and deserialization.
+    Suggested Packages: Gson, Jackson, or org.json.
+
+Resources:
+
+    Gson User Guide: Gson GitHub
+    Jackson Documentation: FasterXML Jackson Wiki
+    Natural Language Processing with Java: OpenNLP (optional)

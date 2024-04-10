@@ -1,0 +1,75 @@
+Final Project: Recipe Manager and Meal Planner
+Synopsis
+
+In this project, you will develop a Recipe Manager and Meal Planner application. The final product will allow users to add, view, and categorize recipes, create meal plans for the week, and save their data for future use. This application will start as a console application, focusing on the core functionalities first, and will gradually incorporate advanced features, including persistent data storage. The project is divided into stages, each building upon the work of the previous one, allowing you to incrementally develop your programming skills and apply them to a larger, more complex application.
+Stage 1: Basic Recipe Management
+
+Deliverable: A console application that allows users to add, view, and delete recipes.
+
+Requirements:
+
+    Implement a text-based menu with options to add a recipe, view all recipes, and delete a recipe.
+    For adding a recipe, prompt the user for the name, ingredients, and instructions.
+    Store each recipe in memory using a simple list structure.
+    Enable viewing of all added recipes and their details.
+    Allow deletion of a recipe by name or index.
+
+Hints: Look into lists or arrays for storing recipes. Familiarize yourself with basic I/O operations in Java for taking user input and displaying information.
+Stage 2: Expanding Recipe Features
+
+Deliverable: Enhanced functionality for categorizing recipes and filtering them by category.
+
+Requirements:
+
+    Introduce categories for recipes (e.g., Breakfast, Lunch, Dinner, Dessert) using enums.
+    Allow users to assign a category when adding a recipe and implement the functionality to filter recipes by category.
+    Improve user interface to manage invalid inputs effectively.
+
+Hints: Enums in Java can help organize recipe categories. Consider using control flow statements to handle various user inputs and scenarios.
+Stage 3: Introduction to OOP
+
+Deliverable: Refactored application using Object-Oriented Programming principles, specifically focusing on encapsulation.
+
+Requirements:
+
+    Define a Recipe class with properties for name, ingredients, instructions, and category.
+    Modify your application to use Recipe objects for storing and managing recipes.
+    Implement methods in the Recipe class for common operations (e.g., displaying a recipe's details).
+
+Hints: This stage is all about encapsulating related data and behaviors into classes and objects. Look into Java classes, objects, and methods.
+Stage 4: Meal Planning Feature
+
+Deliverable: Functionality to plan meals for a week by assigning recipes to specific days.
+
+Requirements:
+
+    Create a MealPlan class to hold recipes for each day of the week.
+    Allow users to create a meal plan by choosing recipes from the list of added recipes.
+    Implement a feature to display the meal plan for the entire week.
+
+Hints: This will require understanding associations between classes (e.g., how a MealPlan can contain multiple Recipe objects).
+Stage 5: Persistent Data (File Management)
+
+Deliverable: Capability to save and load recipes and meal plans to and from a file.
+
+Requirements:
+
+    Implement functionality to write recipes and meal plans to a file.
+    Load recipes and meal plans from this file when the application starts.
+    Ensure proper error handling for file operations.
+
+Hints: Explore Java's file I/O capabilities, focusing on writing to and reading from files, as well as handling exceptions.
+Stage 6: Advanced Features and Refinements
+
+Deliverable: A fully-featured application with user accounts, recipe ratings, and optionally sharing meal plans.
+
+Requirements:
+
+    Implement user accounts where users can save their recipes and meal plans.
+    Allow users to rate recipes and sort recipes by rating.
+    (Optional) Add functionality to share meal plans between users.
+
+Hints: This stage will involve using more complex data structures (e.g., maps, sets) and algorithms for sorting. Look into serialization for saving complex objects.
+Final Submission
+
+Your final submission should be a comprehensive application that includes all the functionalities described above. Make sure to thoroughly test each component to ensure reliability and usability. Good luck, and have fun building your Recipe Manager and Meal Planner!
