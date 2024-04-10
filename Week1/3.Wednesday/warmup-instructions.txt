@@ -1,0 +1,2 @@
+You will notice two projects. Both of them are warmups. Open the projects up in IntelliJ, and begin working.
+One is more advanced, and is not mandatory that you do it. Good luck!
