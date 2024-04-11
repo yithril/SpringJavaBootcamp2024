@@ -1,6 +1,6 @@
 Instructions
 
-    Create a new program in your Githup repo folder. 
+    Create a new program. You probably want a folder for morning warmups since this won't be going up to github.
 
     Inside the main method of your project, do the following:
 
