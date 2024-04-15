@@ -1,0 +1,5 @@
+This morning's warmup is to research about what encapsulation is, its advantages, and disadvantages.
+The internet has plenty of stuff on the subject. You can narrow your search to Java, but encapsulation
+applies to OOP in general in any language.
+Please read through the articles and in your own words explain what you think encapsulation is and
+why it might be useful in programming. Discuss with your group.
