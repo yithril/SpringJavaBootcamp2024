@@ -1,15 +1,20 @@
 package org.example;
 
 public class Player {
-    private int health;
+    private int health = 100;
     //0 is starving 100 is full
-    private int hunger;
+    private int hunger = 100;
     private String name;
     private Occupation occupation;
 
     public Player(int health, int hunger, String name, Occupation occupation) {
         this.health = health;
         this.hunger = hunger;
+        this.name = name;
+        this.occupation = occupation;
+    }
+
+    public Player(String name, Occupation occupation){
         this.name = name;
         this.occupation = occupation;
     }
