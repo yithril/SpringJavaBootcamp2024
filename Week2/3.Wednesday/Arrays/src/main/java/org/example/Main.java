@@ -10,11 +10,14 @@ public class Main {
         String[] stringArray = new String[4];
         Person[] personArray = new Person[5];
 
+        personArray[0] = new Person();
+        personArray[0] = null;
+
         System.out.println("Numbers length is: " + numbers.length);
         System.out.println("Numbers2 length is: " + numbers2.length);
         System.out.println("Numbers3 length is: " + numbers3.length);
 
-        numbers[0] = 10;
+        numbers[0] = 19;
         numbers[1] = 20;
         numbers[2] = 30;
         numbers[3] = 40;
@@ -22,10 +25,10 @@ public class Main {
         //numbers[5] = 60;
 
         //You can change the values later as you want
-        numbers[1] = 100;
+        //numbers[1] = 100;
 
         //clear a value
-        numbers[4] = 0;
+        //numbers[4] = 0;
 
         for(int i = 0; i < numbers.length; i++){
             System.out.println(numbers[i]);
