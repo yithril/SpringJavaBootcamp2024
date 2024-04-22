@@ -1,0 +1,12 @@
+Remember, projects go in your workshop folder in your Bootcamp-Labs folder, that way they can be pushed to Github.
+
+For this project you are going to come up with your own pseudo code, but I will give you some food for thought.
+
+The methods you see are going to be in the book class (namely, checkOut and checkIn)
+
+The boolean "isCheckedOut" is true if the book is currently checked out. Therefore, the method "checkOut"
+should change the value of isCheckedOut. But what if the book is already checked out? Can a user do that?
+
+Also when you check out a book, you need to know WHO is checking it out. You might need to ask their name!
+
+Have fun coming up with book names, but don't burn yourself out typing. ChatGPT is GREAT for coming up with mock data.

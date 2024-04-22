@@ -1,0 +1,50 @@
+**Git Basics Cheat Sheet**
+
+**Clone a Repository:**
+git clone <repository_url>
+
+**Check Current Branch:**
+git branch
+
+**Create a New Branch:**
+git branch <new_branch_name>
+
+**Switch to a Branch:**
+git checkout <branch_name>
+
+**Create and Switch to a New Branch:**
+git checkout -b <new_branch_name>
+
+**Add Changes for Commit:**
+git add <file_name>   # Add specific file
+git add .             # Add all changes
+
+**Commit Changes:**
+git commit -m "Commit message"
+
+**Push Changes to Remote:**
+git push origin <branch_name>
+
+**Pull Latest Changes from Remote:**
+git pull origin <branch_name>
+
+**Merge a Branch into Current Branch:**
+git merge <branch_name>
+
+**View Git Status:**
+git status
+
+**View Commit History:**
+git log
+
+**Discard Local Changes (Be Careful!):**
+git reset --hard HEAD
+
+**Branching and Pull Requests:**
+1. Create a new branch for your feature or bug fix.
+2. Make changes, commit, and push to your branch.
+3. Create a pull request from your branch to the main repository.
+4. Review and discuss changes in the pull request.
+5. If approved, merge your branch into the main repository.
+
+**Note:** Always pull the latest changes from the main repository before making your own changes.
