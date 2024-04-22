@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 public class UserInterface {
@@ -103,6 +104,7 @@ public class UserInterface {
             }
         }
     }
+
 
     private Book getBookByIdAndStatus(int id, boolean checkedInStatus){
         for(Book book : books){
