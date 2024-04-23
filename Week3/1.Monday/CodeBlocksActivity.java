@@ -1,5 +1,4 @@
 public class CodeBlocksActivity {
-
     public static void main(String[] args) {
         int mainVariable = 10;
 

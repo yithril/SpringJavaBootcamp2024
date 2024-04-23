@@ -1,0 +1,21 @@
+You will be placed into teams. Each team picks 2 of the following exceptions:
+
+    IOException - 
+    FileNotFoundException - 
+    SQLException - 
+    ClassNotFoundException -
+    InterruptedException -
+    NullPointerException - 
+    ArithmeticException - 
+    ArrayIndexOutOfBoundsException - 
+    IllegalArgumentException - 
+    IllegalStateException - 
+    IndexOutOfBoundsException
+    NumberFormatException
+    UnsupportedOperationException
+
+Discuss the following:
+
+1. Are they checked or unchecked?
+2. When is the exception thrown? (Be sure to use proper vocabulary. 'The exception is thrown when...')
+3. Can you find a code snippet online or provide code to show and demonstrate why this exception would be thrown?
