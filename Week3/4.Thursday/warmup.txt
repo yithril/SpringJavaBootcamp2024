@@ -1,0 +1,15 @@
+Instructions:
+
+    Setup:
+        Import Java’s HashMap from the java.util package. You'll use this to store the mapping of names to phone numbers.
+
+    Task Overview:
+        Create a phone directory where you can add names and corresponding phone numbers, and then look up a phone number by name.
+
+    Requirements:
+        Declare and initialize a HashMap<String, String> called phoneDirectory. The key will be a person's name (as a String), and the value will be their phone number (also as a String).
+
+    Features to Implement:
+        Add Person Function: Write a method void addPerson(String name, String phoneNumber) that adds a person and their phone number to the directory.
+        Lookup Person Function: Write a method void lookupPerson(String name) that looks up a person's phone number in the directory. If the person exists, 
+        print "Dialing [name] at [phone number]". If not, print "Person's number not found".
