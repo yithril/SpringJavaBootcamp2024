@@ -1,0 +1,46 @@
+11/1 Warmup
+
+Let's practice decision trees. Decision trees allow us to map out logic and see all the different
+paths our logic can take us. Here is an example decision tree:
+
+Is it raining?
+  |
+  +-- Yes --> Stay at home
+  |
+  +-- No
+       |
+       +-- Is it sunny?
+       |    |
+       |    +-- Yes --> Go to the beach
+       |    |
+       |    +-- No --> Go for a hike
+       |
+       +-- Is it cloudy?
+            |
+            +-- Yes --> Watch a movie
+            |
+            +-- No --> Go for a walk in the park
+
+You're going to create your own decision tree. This will help you develop your algorithmic thinking
+skills. If you don't want to do it as a text file then you can write it out or use whatever software
+you want.
+
+Scenario:
+You and your friends want to plan an exciting weekend adventure, but you need to decide on the best activity based on various factors. 
+Create a decision tree to help you make the decision. Consider the following factors:
+
+    Weather: Is the weather forecast favorable (e.g., sunny, cloudy, rainy, or snowy)?
+
+    Number of Friends Available: How many friends are available to join the adventure (e.g., 1-2, 3-4, or 5 or more)?
+
+    Adventure Preference: What type of adventure are you in the mood for (e.g., outdoor, indoor, or a mix)?
+
+    Budget: How much money are you willing to spend on the adventure (e.g., low budget, medium budget, or high budget)?
+
+    Travel Distance: Are you willing to travel a long distance for the adventure (e.g., nearby, moderate distance, or far away)?
+
+Use the above factors to design a decision tree that helps you and your friends choose the perfect weekend adventure. You can add your own 
+creative options for each factor, such as specific activities, locations, or budget ranges. Be sure to include decision points, branches, 
+and outcomes in your decision tree.
+
+
