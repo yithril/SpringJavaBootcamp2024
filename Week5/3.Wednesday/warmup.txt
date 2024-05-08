@@ -1,0 +1,15 @@
+Scenario: Imagine you're designing a Restaurant Management System. In this system, there are different components, such as chefs, customers, menus, and orders. Your task is to identify the relationships between these objects.
+
+    Step 1: Identify Objects
+        Take a few minutes to list the various objects you might encounter in a restaurant management system (e.g., Chef, Customer, Menu, Order, Restaurant).
+
+    Step 2: Identify Relationships
+        Think about how these objects relate to each other. For instance, a restaurant can have many chefs, and an order can contain multiple menu items.
+        Determine whether the relationship is:
+            One-to-One: An instance of class A has a single instance of class B.
+            One-to-Many: An instance of class A has multiple instances of class B.
+            Many-to-One: Multiple instances of class A relate to a single instance of class B.
+            Many-to-Many: Multiple instances of class A relate to multiple instances of class B.
+
+    Step 3: Suggest Data Structures
+        Based on the relationships you identified, suggest which data structures you would use to model them (e.g., arrays, ArrayList, HashMap, HashSet).
