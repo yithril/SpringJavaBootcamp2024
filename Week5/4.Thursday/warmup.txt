@@ -1,0 +1,36 @@
+Warmup Activity: Identify the Relationships
+
+Many to many, many to one, one to many, one to one, none
+
+Remember many to one/one to many is from the perspective of the class you're talking about
+
+    Car and Engine
+        A car has one engine, and each engine belongs to a specific car.
+
+    Author and Books
+        An author can write multiple books, and each book is written by one author.
+
+    Book and Genre
+        Each book belongs to a specific genre (e.g., science fiction), but multiple books can belong to the same genre.
+
+    Student and Extracurricular Clubs
+        Students can join multiple extracurricular clubs, and each club can have multiple students.
+
+    Department and Employees
+        A department can have multiple employees, and each employee is part of a specific department.
+
+    Player and Sports Team
+        A player can only play for one team at a time, and each team can have multiple players.
+
+    Computer and Monitor
+        Each computer setup has one monitor, and each monitor is dedicated to a specific computer setup.
+
+    Library and Books
+        A library contains multiple books, and each book is available in multiple libraries.
+
+    Country and Currency
+        Each country has a specific currency, and each currency is used by a specific country.
+
+    Conference and Attendees
+
+    A conference can have multiple attendees, and each attendee can participate in multiple conferences.
