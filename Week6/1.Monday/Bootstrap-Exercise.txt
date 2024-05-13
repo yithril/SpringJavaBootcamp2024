@@ -1,0 +1,36 @@
+Activity: Creating a Grid of Cards with Bootstrap
+
+Objective: In this activity, you will practice using the Bootstrap grid system and incorporate card components into your responsive webpage.
+
+Instructions:
+
+Set Up the Project:
+
+Continue working on the same project you started in the previous Bootstrap activity, which includes Bootstrap.
+Grid of Cards:
+
+Within your existing webpage layout, create a new section (e.g., <section>) where you want to display a grid of cards. This section can be placed anywhere on your webpage, such as the main content area.
+Card Components:
+
+Utilize Bootstrap's card component to create individual cards inside the grid. Each card should include:
+An image (replace "your-image-source.jpg" with the actual image source).
+A title (modify the text within <h5 class="card-title">).
+Some text content (edit the text within <p class="card-text">) describing the card.
+You can add any additional elements or content you like within the card.
+Grid Layout:
+
+Employ the Bootstrap grid system (.container, .row, .col-*) to organize the cards in a responsive grid within the section you created.
+Experiment with different column widths and responsiveness using classes like .col-sm-*, .col-md-*, and .col-lg-* to ensure the grid adjusts well on various screen sizes.
+Content and Styling:
+
+Customize the content of each card with your own text and images to make it unique.
+If desired, you can add custom CSS styles to enhance the appearance of the cards or adjust Bootstrap classes to align the cards with your design preferences.
+Testing:
+
+Open your HTML file in a web browser and test how the grid of cards behaves on different screen sizes. Ensure that the cards stack or resize appropriately on smaller screens.
+Documentation:
+
+Feel free to refer to the Bootstrap documentation (https://getbootstrap.com/docs/4.5/components/card/) for more details on customizing card components if you have questions or want to explore additional options.
+Share and Discuss:
+
+If you'd like, you can share your grid of cards with the class and discuss how you used the Bootstrap grid system and card components to create a responsive and visually appealing layout.

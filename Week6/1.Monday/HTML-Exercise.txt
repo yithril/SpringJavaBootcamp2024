@@ -1,0 +1,38 @@
+Exercise: Create a Basic HTML Web Page
+
+Objective: In this exercise, you will create a basic HTML web page using HTML tags. Follow the instructions below to complete the task.
+
+Instructions:
+
+HTML Structure: Create the basic structure of an HTML document by typing the following code into a text editor. Save the file with the .html extension.
+
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+</head>
+<body>
+    <!-- Your content goes here -->
+</body>
+</html>
+Page Title: Inside the <title> element (within the <head> section), replace "Your Page Title" with a title of your choice that describes your web page.
+
+Content: In the <body> section, add the following elements to your web page:
+
+Create a main heading using the <h1> tag.
+Add a paragraph using the <p> tag with some text describing your page.
+Create an unordered list (<ul>) with at least three list items (<li>).
+Include a link (<a>) to any website or page you like. Use the href attribute to specify the URL.
+Insert an image (<img>) using the src attribute to link to an image file. You can use an image URL from the internet or provide a local image file and specify the file path in the src attribute.
+Use the <em> and <strong> tags to emphasize or highlight some text within the paragraph.
+Validation: After creating your web page, validate it using the W3C Markup Validation Service (https://validator.w3.org/). Ensure that there are no HTML errors.
+
+Preview: Open your HTML file in a web browser to view the web page you've created.
+
+Sharing: If you like, share your mini website with the class or peers for feedback and discussion.
+
+Requirements:
+
+Use a minimum of the following HTML tags: <html>, <head>, <title>, <body>, <h1>, <p>, <ul>, <li>, <a>, <img>, <em>, <strong>.
+Make sure your web page is visually appealing and organized.

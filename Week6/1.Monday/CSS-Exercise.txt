@@ -1,0 +1,52 @@
+Exercise: Exploring CSS Selectors
+
+Objective: In this exercise, you will create an HTML web page and apply CSS styles using various selectors, including IDs, classes, and tags.
+
+Instructions:
+
+HTML Structure: Create an HTML file (e.g., selectors.html) with the following structure:
+html
+
+Copy code
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Exercise</title>
+    <link rel="stylesheet" type="text/css" href="selectors.css">
+</head>
+<body>
+    <h1>CSS Selectors Exercise</h1>
+    <div id="container">
+        <p class="styled-paragraph">This paragraph has a class applied.</p>
+        <p class="styled-paragraph">This paragraph has the same class applied.</p>
+        <p id="special-paragraph">This paragraph has an ID applied.</p>
+        <ul>
+            <li>This is a list item.</li>
+            <li class="styled-list-item">This list item has a class.</li>
+            <li>This is another list item.</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+Research and Apply CSS Styles: Your task is to research and figure out how to apply CSS styles to the HTML elements based on the provided structure. You will be using various CSS selectors to target different elements. Here are some things to consider:
+
+Use CSS selectors to target elements by their tag names, classes, and IDs.
+Apply different styles to the elements as described in the comments within the HTML and CSS files.
+Experiment and Observe:
+
+Experiment with adding more CSS rules or modifying existing ones to further style the elements on the page.
+Open the HTML file in a web browser to see how the styles are applied to the elements.
+Customization: Feel free to customize the styles based on your preferences. You can change colors, fonts, background colors, and more.
+
+Challenge: If you want an extra challenge, try adding your own HTML elements with unique IDs, classes, or tags, and apply CSS styles to them as well.
+
+Share Your Work: If you'd like, you can share your HTML and CSS files with your peers for discussion and feedback.
+
+This exercise will help you explore and understand how to use different CSS selectors to style HTML elements. Remember to research and experiment to achieve the desired styles. Don't hesitate to seek help or collaborate with your peers if you encounter any challenges.
+
+
+
+
+
