@@ -1,0 +1,45 @@
+Activity: Currency Conversion Application
+
+Objective:
+
+Create a Java program that simulates a simple currency converter using BigDecimal. 
+
+Scenario:
+
+Suppose you need to build a program that converts amounts from one currency to another (e.g., USD to EUR, GBP to JPY). The program should handle multiple conversions with different exchange rates.
+
+Task:
+
+Develop a program that:
+
+    Hard-Coded Data:
+        Define a set of currencies and their corresponding exchange rates (e.g., 1 USD = 0.85 EUR, 1 GBP = 150 JPY). These can be hard-coded as constants.
+        Define a set of amounts in different currencies to be converted.
+
+    Conversions:
+        Implement a method to perform currency conversion using BigDecimal.
+        Ensure precision in conversion, especially when dealing with large or small amounts.
+
+    Output:
+        Display the original amount, target currency, and converted amount for each conversion.
+
+Steps:
+
+    Setup: Create a new Java project and add a main class.
+
+    Defining Constants:
+        Define constants for each currency and its exchange rate.
+
+    Implementing Conversion Logic:
+        Use BigDecimal for all currency amounts and calculations.
+        Create a method to perform the conversion, taking into account the exchange rate.
+
+    Calculations:
+        Perform conversions for the predefined set of amounts.
+
+    Output Results:
+        Print the results of each conversion, showing both the original and converted amounts.
+
+Sample Starter Code:
+    private static final BigDecimal USD_TO_EUR_RATE = new BigDecimal("0.85");
+    private static final BigDecimal GBP_TO_JPY_RATE = new BigDecimal("150");
