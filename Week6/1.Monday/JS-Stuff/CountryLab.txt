@@ -1,0 +1,35 @@
+Step 1: HTML Structure
+
+    Create an HTML file (e.g., "country-flag.html") and set up the basic structure of an HTML document.
+
+    Inside the <body> section, create the following elements:
+        <h1> heading with the title "Country Flag Viewer."
+	<span> with the name of the country in it (Start off with a default country).
+        <input> element with a placeholder for entering the country name.
+        <button> element with the text "Submit."
+        <img> element with the id attribute set to "flag-image" and a default flag image (e.g., "flag-jps.jpg"). Set the src attribute to the default image.
+
+Step 2: CSS Styling
+
+    Create an external CSS file (e.g., "styles.css") and link it to your HTML file.
+
+    In "styles.css," apply basic styling to the elements:
+Style the background of the <body> with three colors (e.g., using background: linear-gradient(...);) or set the background to the main color of the default flag image (you may need to use an appropriate color picker tool to determine the main color).
+
+Step 3: JavaScript Functionality
+
+    Create a JavaScript file (e.g., "script.js") and link it to your HTML file.
+
+    In "script.js," write JavaScript code to:
+        Select the <input> element and the <button> element.
+        Add an event listener to the <button> that triggers when it's clicked.
+
+    You will need to create an object for each of the countries with a property for the name of the image of the flag, as well as for the colors that you want to set the background to.
+
+    In the event listener function, retrieve the value entered in the <input> element and use it to determine the filename of the country's flag image (e.g., "flag-jps.jpg" for Japan). Update the src attribute of the <img> element to display the corresponding flag image, and change the color of the background of the page to the same as the flag. Also update the span to reflect the name of the country.
+
+BONUS
+
+Include other informaton about the country to display to the screen like population, or maybe a fun fact about the country. Include this info in your country object.
+
+Use Bootstrap or Flexbox to position elements where you want them on the page.

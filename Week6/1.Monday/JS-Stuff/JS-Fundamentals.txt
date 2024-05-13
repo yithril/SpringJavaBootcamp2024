@@ -1,0 +1,36 @@
+JavaScript Fundamentals Review Assignment
+
+Remember to save your file as a .js file, and use the command node <filename.js> to run the program in the terminal so you can 
+see the output with console.log
+
+Problem 1: Variables and Conditional Statements
+
+Create a variable temperature and set it to a numerical value representing the current temperature in Celsius. Write an if statement that logs one of the following messages based on the temperature:
+
+    If the temperature is greater than or equal to 30 degrees, log "It's a hot day!"
+    If the temperature is less than 30 degrees and greater than or equal to 20 degrees, log "It's a nice day."
+    If the temperature is less than 20 degrees, log "It's a cold day."
+
+Problem 2: For Loop and Array
+
+Create an empty array called numbers. Use a for loop to populate the array with numbers from 1 to 10 (inclusive). Log the numbers array.
+
+Problem 3: While Loop and Arithmetic
+
+Create a variable sum and set it to 0. Use a while loop to add the numbers from 1 to 10 to the sum variable. Log the final value of sum.
+
+Problem 4: Functions
+Write a function called multiply that takes two parameters a and b and returns their product. Call the function with different arguments and log the results.
+
+Problem 5: Functions (Division with Try-Catch)
+
+Write a function called divide that takes two parameters, a and b, and returns the result of dividing a by b. However, use a try-catch block to handle the case where b is 0 (divide by zero). If a divide by zero error occurs, log an error message. Otherwise, return the result. Call the divide function with different arguments to test both successful and error cases.
+
+Problem 5: Arrays (Push, Pop, Shift, and Unshift)
+
+Start with an array called fruits containing some initial values (e.g., ["apple", "banana"]). Perform the following array operations without using try-catch, but make sure to log the array after each operation:
+
+    Push the string "cherry" onto the end of the fruits array.
+    Pop an element from the end of the fruits array.
+    Unshift the string "grape" to the beginning of the fruits array.
+    Shift an element from the beginning of the fruits array.
