@@ -1,0 +1,36 @@
+Activity Instructions: Create a Pet Profile Page
+
+Objective: In this activity, you will create a simple web page that profiles a pet. Like for an adoption agency. You will apply basic styling using CSS and practice targeting elements by ID, class, and tag for CSS styling.
+
+Instructions:
+
+Step 1: Set Up the HTML Structure
+
+    Open a text editor (e.g., Notepad, Visual Studio Code) and create a new HTML file named "pet-profile.html."
+
+Step 2: Create a CSS File
+
+    Create a CSS file named "styles.css" in the same directory as your HTML file.
+
+Step 3: Apply Basic Styling
+
+    Link the "styles.css" file to your HTML file by including the following line inside the <head> section of your HTML file (replace [path-to-css-file] with the correct path):
+
+
+<link rel="stylesheet" href="[path-to-css-file]">
+
+Step 4: Create the Content
+
+    Inside the <body> section of your HTML file, create the content for your pet profile page. Use HTML elements like header, main, div, img, h2, p, and ul to structure the content. The structure of the html is up to you! 
+
+You must include the image of the pet! Be creative.
+
+Step 5: Target and Style Elements
+
+You must target one element by id, 2 elements by class, and an element by the tag name and apply styling to them. You can apply whatever style you want, like changing the color or adding some margin, be creative!
+
+Step 6: Test Your Web Page
+
+    Open your "pet-profile.html" file in a web browser to see the pet profile with applied styles.
+
+BONUS: Use Bootstrap to make your website look better by positioning the elements where you want or using premade bootstrap components.
