@@ -1,0 +1,17 @@
+Exercise: Determine the Relationship
+
+Instructions: For each of the following pairs, determine whether the relationship is an "is-a" (indicating inheritance) or a "has-a" (indicating composition). 
+Write your answer and a brief justification for your decision. Remember, try making a sentence out of it and see which one makes sense!
+
+    Car - Engine
+    Bird - Animal
+    Library - Book
+    Teacher - Person
+    Bank - Account
+    Circle - Shape
+    Laptop - Computer
+    Novel - Book
+    Ship - Cargo
+    
+
+Now come up with an Is-A and Has-A relationship of your own!
