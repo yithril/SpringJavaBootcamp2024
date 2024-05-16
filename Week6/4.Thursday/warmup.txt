@@ -1,0 +1,17 @@
+Warmup Activity: Default and Overridden Behavior
+Objective:
+
+Practice method overriding in subclasses and understand the role of default implementations in a parent class.
+Scenario: Electronic Devices
+Instructions:
+
+    Define the Parent Class:
+        Create a class ElectronicDevice with a default implementation for the turnOn() method and an abstract method performFunction().
+
+    Create Subclasses:
+
+         Create two subclasses TV and Radio that extend ElectronicDevice.
+         Override the turnOn() method in each subclass to provide a specific message.
+         Implement the performFunction() method in each subclass with unique functionality.
+
+    In the Main class, instantiate objects of TV and Radio, call their methods, and observe the output.
