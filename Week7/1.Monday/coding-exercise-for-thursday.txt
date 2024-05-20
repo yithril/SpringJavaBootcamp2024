@@ -1,0 +1,30 @@
+This Thursday I will do a live coding exercise with students individually. This is to prepare you for possible live coding that you may 
+need to do at a job interview. The second purpose is to see what you've absorbed over the past few weeks. We've learned all of basic Java,
+so I want to make your skills are up to snuff before we move on to JDBC and Spring Boot.
+
+The coding exercise can make use of ANY topic we've discussed in previous weeks. That means basic stuff like 
+variables
+for loops
+while loops
+conditional statements
+switch statements
+making classes
+getters and setters
+constructors
+methods
+access modifiers (public, private, protected)
+overloading methods and constructors
+inheritance 
+has-a relationships
+abstract classes
+abstract methods
+overriding
+using the Scanner
+basic string methods
+parsing
+try/catch and handling exceptions
+checked vs unchecked exceptions
+Working with directories in the command line
+Basic Git commands
+
+It will last 10 minutes. I will give you a prompt, you will code to the best of your ability, explain why you did what you did, and then we'll have a brief convo.
