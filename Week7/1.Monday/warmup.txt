@@ -1,0 +1,40 @@
+You can use the diagramming software of your choice (Lucidchart,etc.) to create your diagrams. There is NO need for code in this warmup.
+
+Step 1: Scenario Introduction
+
+    Imagine the Scenario
+        You are designing a system for a zoo. You have different types of animals, and you want to organize them using classes.
+
+    Define the Base Class
+        Start with a base class Animal that has common properties like name and age and a method makeSound().
+
+    Introduce Subclasses
+        Create subclasses Mammal, Bird, and Fish that inherit from Animal.
+        Each subclass can have additional methods or properties specific to that type.
+
+    Special Cases
+        Now we'll introduce more cases to the mix.
+        Bat is a mammal that can fly.
+        Penguin is a bird that swims.
+        Dolphin is a mammal that swims.
+
+Step 2: Diagramming Inheritance
+
+    Draw Inheritance Hierarchy
+        Draw the inheritance hierarchy starting from Animal and branching out to Mammal, Bird, and Fish.
+        Add Bat, Penguin, and Dolphin to their respective subclasses.
+
+    Identify the Problem
+        Think about how you would handle the flying and swimming abilities.
+        Consider the problem: Bat should inherit flying abilities, but it doesn't fit well with only inheriting from Mammal. Similarly, Penguin and Dolphin need swimming abilities   
+        but fit differently in the inheritance structure.
+
+Step 3: Questions to Answer
+
+    Consider the Abilities
+        How would you assign the flying ability to the Bat?
+        How would you assign the swimming ability to the Penguin and the Dolphin?
+
+    Reflect on the Problems
+        What issues do you see with using only inheritance to handle these abilities?
+        Why might inheritance alone be insufficient or problematic in this scenario?
