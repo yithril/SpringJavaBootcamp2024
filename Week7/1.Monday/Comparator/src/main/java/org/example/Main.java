@@ -36,7 +36,7 @@ public class Main {
         NameComparator nm = new NameComparator();
         AgeComparator ac = new AgeComparator();
 
-        Collections.sort(personList, nm);
+        Collections.sort(personList, ac);
 
         personList.stream().forEach(x -> System.out.println(x.getName() + " " + x.getAge()));
     }

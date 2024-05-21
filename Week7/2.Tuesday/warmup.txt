@@ -1,0 +1,30 @@
+Scenario 1: Animal Behavior
+
+You have different types of animals: Dog, Cat, Bird. They all need to make a sound, but each animal makes a different sound.
+
+    Question: Should you use inheritance or an interface to define the makeSound method? Discuss the advantages and disadvantages of each approach.
+
+Scenario 2: Shape Drawing
+
+You have different shapes: Circle, Square, Triangle. Each shape needs a draw method to render itself.
+
+    Question: Should you use inheritance or an interface to define the draw method? Discuss the advantages and disadvantages of each approach.
+
+Scenario 3: Vehicle Actions
+
+You have different types of vehicles: Car, Boat, Plane. Each vehicle needs methods to startEngine and stopEngine.
+
+    Question: Should you use inheritance or an interface to define these methods? Discuss the advantages and disadvantages of each approach.
+
+Scenario 4: User Authentication
+
+You have different types of users: Admin, Customer, Guest. Each user type needs to authenticate, but the method of authentication varies.
+
+    Question: Should you use inheritance or an interface to define the authenticate method? Discuss the advantages and disadvantages of each approach.
+
+Scenario 5: File Processing
+
+You have different file types: TextFile, ImageFile, AudioFile. Each file type needs to process data in a specific way.
+
+    Question: Should you use inheritance or an interface to define the process method? Discuss the advantages and disadvantages of each approach.
+
