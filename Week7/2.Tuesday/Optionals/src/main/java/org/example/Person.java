@@ -23,9 +23,10 @@ public class Person {
         this.name = name;
     }
 
-    public Optional<Address> getAddress() {
+
+     public Optional<Address> getAddress() {
         return Optional.ofNullable(address);
-    }
+   }
 
     public void setAddress(Address address) {
         this.address = address;

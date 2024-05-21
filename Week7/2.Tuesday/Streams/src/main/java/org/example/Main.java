@@ -25,7 +25,7 @@ public class Main {
         //What products do we have that are over $500?
         var overFiveHundred = products.stream().filter(product -> product.getPrice() > 500).toList();
 
-        //overFiveHundred.forEach(x -> System.out.println(x.toString()));
+        overFiveHundred.forEach(x -> System.out.println(x.toString()));
 
         var betweenTwoAndFourHundred = products.stream()
                 .filter(product -> product.getPrice() > 200 && product.getPrice() < 400)
@@ -33,7 +33,7 @@ public class Main {
 
         //What are the names of the products we sell?
         //method reference
-        //products.stream().map(Product::getName).sorted().toList().forEach(name -> System.out.println(name));
+        products.stream().map(Product::getName).sorted().toList().forEach(name -> System.out.println(name));
 
         //What is the sum of all our prices?
         var totalOfPrices = products.stream().map(Product::getPrice).reduce(0.0, Double::sum);
@@ -42,7 +42,7 @@ public class Main {
         var averagePrice = totalOfPrices / products.stream().count();
 
         //there is a shorter way to do this
-        double shorterWay = products.stream().mapToDouble(Product::getPrice).average().orElse(0);
+        var shorterWay = products.stream().mapToDouble(Product::getPrice).average().orElse(0);
 
         //what is our most expensive product?
         var mostExpensive = products.stream().mapToDouble(Product::getPrice).max().orElse(0);
