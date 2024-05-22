@@ -93,5 +93,19 @@ public class Main {
                 person.getProfession().equalsIgnoreCase("Doctor"))
                 .mapToDouble(Person::getYearlyIncome)
                 .average().orElse(0));
+
+        //What if you wanted to find the first person on the list that met some criteria?
+        var michiganPerson= database.stream().filter(person -> person.getState().equalsIgnoreCase("Michigan"))
+                .findFirst().orElse(null);
+
+        //WHo is a person that lives in Alaska
+        var anybodyInAlaska = database.stream().filter(person -> person.getState().equalsIgnoreCase("Alaska"))
+                .findAny().orElse(null);
+
+        //Does anyobody live in Alaska
+        boolean anyAreAlska = database.stream().anyMatch(person -> person.getState().equalsIgnoreCase("Alaska"));
+
+        //anyMatch's evil opposite
+        boolean noOneInDelaware = database.stream().noneMatch(person -> person.getState().equalsIgnoreCase("Delaware"));
     }
 }
