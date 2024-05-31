@@ -1,0 +1,33 @@
+1|BREAD|5.50|white
+2|BREAD|5.50|wheat
+3|BREAD|5.50|rye
+4|BREAD|5.50|wrap
+5|MEAT|1.00|steak
+6|MEAT|1.00|ham
+7|MEAT|1.00|salami
+8|MEAT|1.00|roast beef
+9|MEAT|1.00|chicken
+10|MEAT|1.00|bacon
+11|CHEESE|0.75|american
+12|CHEESE|0.75|provolone
+13|CHEESE|0.75|cheddar
+14|CHEESE|0.75|swiss
+15|REGULAR_TOPPING|0|lettuce
+16|REGULAR_TOPPING|0|peppers
+17|REGULAR_TOPPING|0|onions
+18|REGULAR_TOPPING|0|tomatoes
+19|REGULAR_TOPPING|0|jalepenos
+20|REGULAR_TOPPING|0|cucumbers
+21|REGULAR_TOPPING|0|pickles
+22|REGULAR_TOPPING|0|guacamole
+23|REGULAR_TOPPING|0|mushrooms
+24|SAUCES|0|mayo
+25|SAUCES|0|mustard
+26|SAUCES|0|ketchup
+27|SAUCES|0|ranch
+28|SAUCES|0|thousand islands
+29|SAUCES|0|vinaigrette
+30|SIDES|0|au jus
+31|SIDES|0|sauce
+32|EXTRA_MEAT|.5|extra meat
+33|EXTRA_CHEESE|.3|extra cheese

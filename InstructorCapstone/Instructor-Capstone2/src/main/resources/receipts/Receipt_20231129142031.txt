@@ -1,0 +1,30 @@
+Receipt - 2023-11-29T14:20:31.5784054
+Sandwiches:
+ - LARGE white Sandwich
+   Toppings:
+    - With Cost:
+      chicken: $3.00
+      bacon: $3.00
+      extra meat: $1.5
+      provolone: $2.25
+    - No Cost:
+      cucumbers
+      pickles
+      vinaigrette
+   Price: $18.25
+
+ - MEDIUM wrap Sandwich
+   Toppings:
+    - With Cost:
+      steak: $2.00
+      cheddar: $1.50
+      swiss: $1.50
+    - No Cost:
+      lettuce
+      onions
+      mayo
+   Price: $12.00
+
+Side Items:
+ - Coke (x1) - Each: $1.50, Total: $1.50
+ - Pepsi (x1) - Each: $1.50, Total: $1.50

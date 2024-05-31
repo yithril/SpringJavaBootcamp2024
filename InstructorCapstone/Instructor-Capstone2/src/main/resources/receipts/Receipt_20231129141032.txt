@@ -1,0 +1,17 @@
+Receipt - 2023-11-29T14:10:32.5354831
+Sandwiches:
+ - MEDIUM wheat Sandwich
+   Toppings:
+    - With Cost:
+      ham: $2.00
+      salami: $2.00
+      cheddar: $1.50
+    - No Cost:
+      lettuce
+      jalepenos
+      mustard
+   Price: $12.50
+
+Side Items:
+ - Water (x1) - Each: $1.50, Total: $1.50
+ - Fanta (x1) - Each: $1.50, Total: $1.50
