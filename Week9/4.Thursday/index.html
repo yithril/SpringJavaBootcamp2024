@@ -39,7 +39,36 @@
     </div>
 
     <script>
-
+        function searchMovies() {
+            var movieName = $('#movieInput').val();
+            // API KEY WILL GO HERE
+            $.ajax({
+                url: 'https://www.omdbapi.com/',
+                method: 'GET',
+                data: {
+                    s: movieName,
+                    apikey: '16efb775'
+                },
+                success: function(response) {
+                    console.log(response);
+                    if (response.Response === "True") {
+                        $('#movieDisplay').empty();
+                        response.Search.forEach(function(movie) {
+                            var poster = movie.Poster !== "N/A" ? movie.Poster : 'placeholder.jpg';
+                            $('#movieDisplay').append(
+                                '<div class="text-center">' +
+                                '<img src="' + poster + '" class="movie-poster img-fluid" alt="Movie Poster">' +
+                                '<p>' + movie.Title + ' (' + movie.Year + ')</p>' +
+                                '</div>'
+                            );
+                        });
+                    } else {
+                        $('#movieDisplay').empty();
+                        alert('No movies found!');
+                    }
+                }
+            });
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
