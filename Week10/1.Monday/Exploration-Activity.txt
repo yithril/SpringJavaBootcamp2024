@@ -1,0 +1,118 @@
+For this morning's warmup, we will be exploring more about what Spring
+does behind the scenes. This is more of an experiment than trying to 
+solve a challenge. Follow along with the steps and note what happens.
+
+Use the spring initialzr to create a new Maven Spring project. 
+You may add Spring Web and Lombok if you would like, but they're not
+necessary.
+
+You will need to go to the spring initialzr website: https://start.spring.io/
+To make your new Spring application. If this is still difficult practice it a few times.
+
+Step 1:
+
+    Create a Simple Spring Bean:
+        Create a new Java class named MyBean in your project.
+        Annotate it with @Component.
+        Add a simple method that prints a message.
+
+    java
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyBean {
+    public void printMessage() {
+        System.out.println("MyBean is alive!");
+    }
+}
+
+Question: Did anything print to the console?
+
+Step 2:
+
+Take the MyBean class and alter it, adding some new methods. Here
+is what the class should look like for Step 2 (remember to import where necessary):
+
+@Component
+public class MyBean {
+    @PostConstruct
+    public void init() {
+        System.out.println("MyBean is initialized");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("MyBean is destroyed");
+    }
+
+    public void printMessage() {
+        System.out.println("MyBean is alive!");
+    }
+}
+
+Question: Now run your application. Anytihng outputted to the console?
+
+Step 3:
+
+Create a new class called Dependency Bean. This is what it should look like:
+
+@Component
+public class DependencyBean {
+    public void printDependency() {
+        System.out.println("DependencyBean is injected!");
+    }
+}
+
+Then ADD the following to the MyBean Component:
+
+@Component
+public class MyBean {
+    private final DependencyBean dependencyBean;
+
+    @Autowired
+    public MyBean(DependencyBean dependencyBean) {
+        this.dependencyBean = dependencyBean;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("MyBean is initialized");
+        dependencyBean.printDependency();
+    }
+
+    // ... existing methods ...
+}
+
+Question: What is printed to the console now? What do you think @Autowired is doing?
+
+Step 4:
+
+Create a new class called BeanLister. It should look like this:
+
+@Component
+public class BeanLister {
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
+    @PostConstruct
+    public void listBeans() {
+        String[] beanNames = applicationContext.getBeanDefinitionNames();
+        Arrays.sort(beanNames);
+
+        System.out.println("All beans that Spring Framework manages:");
+        for (String beanName : beanNames) {
+            System.out.println(beanName);
+        }
+    }
+}
+
+Run your program again. What do you see? Do you see myBean or dependencyBean on the list?
+
+
+Step 5:
+
+In your own words, after having done this activity, define Dependency Injection in your words.
+Also, what do you think the DI (Dependency Injection) container in Spring actually does?
+
