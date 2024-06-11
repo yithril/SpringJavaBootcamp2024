@@ -1,0 +1,47 @@
+Question 1: What is Dependency Injection in the context of Spring Framework, and why is it useful?
+A) A technique where the Spring Framework creates and manages objects, allowing for a more modular and testable codebase.
+B) A process where the developer must manually instantiate all object dependencies in their application code.
+C) A method of securing applications by injecting dependencies during runtime to prevent security vulnerabilities.
+D) A pattern used only for injecting data sources like databases and file systems into an application.
+
+Question 2: In the context of Spring MVC, which component of the MVC pattern is responsible for handling user requests and sending responses back to the client?
+A) Model
+B) View
+C) Controller
+D) Service
+
+Question 3: Which HTTP verb is typically used to request data from a server without affecting the data on the server?
+A) POST
+B) GET
+C) PUT
+D) DELETE
+
+Question 4: What does an HTTP status code in the 2xx range indicate?
+A) Client Error
+B) Server Error
+C) Successful Operation
+D) Redirection
+
+Question 5: JSON is often used in web applications for exchanging data between a client and a server. What does JSON stand for?
+A) Java Source Object Notation
+B) JavaScript Object Notation
+C) Java Server Object Network
+D) JavaScript Oriented Network
+
+Question 6: In the MVC pattern, what is the role of the 'Model' component?
+A) It is responsible for handling the application data and business logic.
+B) It deals with user interface and presentation logic.
+C) It handles HTTP requests and routes them to appropriate services.
+D) It manages the application's database connections.
+
+Question 7: Which HTTP verb is typically used by a client to send data to the server for it to be saved or created?
+A) GET
+B) POST
+C) PUT
+D) DELETE
+
+Question 8: What does the HTTP status code 401 Unauthorized indicate?
+A) The server has not found anything matching the request URI.
+B) The request has succeeded, and a new resource has been created.
+C) The request lacks valid authentication credentials for the target resource.
+D) The server understands the request but refuses to authorize it.
