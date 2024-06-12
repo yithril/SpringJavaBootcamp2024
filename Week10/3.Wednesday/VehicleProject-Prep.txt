@@ -1,0 +1,25 @@
+These are the following methods that are in your dealership program.
+Consider if they were just SQL queries using your vehicles table. 
+How would you get this informaton in SQL?
+
+For example:
+
+getAllVehicles() -> SELECT * FROM vehicles
+
+What about these?
+
+getVehiclesByPrice(double min, double max)
+
+getVehiclesByMakeModel(String make, String model)
+
+getVehiclesByYear(int min, int max)
+
+getVehiclesByColor(String color)
+
+getVehiclesByMileage(int min, int max)
+
+getVehiclesByType(String vehicleType)
+
+addVehicle(Vehicle vehicle)
+
+removeVehicle(Vehicle vehicle)
