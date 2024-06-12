@@ -14,10 +14,10 @@ public class Main {
         String password = scanner.nextLine();
 
         // Uncomment this line to use the hashing method without salt
-        String hashedPassword = hashPassword(password);
+        //String hashedPassword = hashPassword(password);
 
         // Uncomment this line to use the hashing method with salt
-        //String hashedPassword = hashPasswordWithSalt(password);
+        String hashedPassword = hashPasswordWithSalt(password);
 
         // Display the hashed password
         System.out.println("Hashed Password: " + hashedPassword);

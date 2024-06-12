@@ -1,0 +1,76 @@
+Let's expand our knowledge!
+
+This will be group work. Your group will be random. Please select one of the following topics.
+
+You will be given 25-30 minutes to research and prepare
+the topic to the best of your ability, using any resource available to you.
+These topics are quite large, so if you don't get all of it, that's okay!
+My goal is to make you aware of what you don't know. 
+
+After you are finished researching, prepare a brief presentation on the topic. 
+Your audience is your classmates, so talk to THEM, not your instructor.
+Use whatever pictures or aids you can think of to help you get your understanding across.
+
+The additional questions are there to help guide you.
+
+Everyone MUST speak!
+
+TOPICS:
+
+Indexing in Databases
+
+    What is indexing in a database?
+    How do indexes improve query performance?
+    Discuss the considerations when creating indexes (like when and where to use them).
+
+Database Connection Pooling in Java
+
+    What is database connection pooling and why is it important?
+    How does connection pooling improve performance in Java applications?
+    What are some popular Java libraries for connection pooling?
+
+ACID Properties in Databases
+
+    What does ACID stand for in the context of databases?
+    Explain each of the ACID properties with examples.
+    Why are ACID properties important for database reliability and consistency?
+
+Normalization in Database Design
+
+    What is normalization in the context of a database?
+    Explain the first three normal forms with examples.
+    Why is normalization important in database design?
+
+JDBC vs ORM (Object-Relational Mapping) Tools
+
+    What is JDBC, and what are its core functionalities?
+    What is an ORM tool, and how does it work?
+    Compare JDBC and ORM tools in terms of ease of use, performance, and control over database operations.
+    Provide examples of popular ORM tools (e.g., Hibernate, JPA).
+
+Types of SQL Joins
+
+    What is a SQL join and why is it used?
+    Explain different types of joins (INNER, LEFT, RIGHT, FULL) with examples.
+    How are joins used in real-world SQL queries?
+
+RESTful APIs with Spring Boot
+
+    What is a RESTful API, and how does it work?
+    How does Spring Boot simplify the development of RESTful APIs?
+    Discuss the role of HTTP methods (GET, POST, PUT, DELETE) in RESTful APIs.
+
+Concurrency in Java
+
+    What is concurrency, and why is it important in programming?
+    Discuss the basics of threads in Java.
+    How can concurrency be managed in Java applications?
+
+Basics of Application Monitoring
+
+    What is application monitoring, and why is it important?
+    Discuss simple strategies for monitoring Java applications.
+    How can logging be used effectively in application monitoring?
+
+
+
