@@ -1,0 +1,45 @@
+Mini Quiz: Spring Boot and REST APIs
+Part 1: Definitions and Concepts
+
+    Dependency Injection (DI):
+        What is Dependency Injection (DI)?
+        Explain the purpose of a DI container.
+
+    HTTP Verbs:
+        Match the following HTTP verbs to their correct description:
+            GET
+            POST
+            PUT
+            DELETE
+            PATCH
+        Descriptions:
+            Used to retrieve information from the server.
+            Used to submit data to be processed to the server.
+            Used to update existing data on the server.
+            Used to delete existing data on the server.
+            Used to apply partial modifications to data on the server.
+
+    API (Application Programming Interface):
+        What is an API?
+        Why are APIs important in software development?
+
+    MVC Architecture:
+        Define the following components of the MVC architecture:
+            Model
+            View
+            Controller
+
+    Repositories and Services:
+        What is the role of a Repository in Spring Boot?
+        What is the role of a Service in Spring Boot?
+
+Part 2: Scenario Questions
+
+You need to retrieve a list of all products available in your online store. Which HTTP verb would you use and why?
+You want to remove a specific product from the inventory. Which HTTP verb would you use and why?
+You need to retrieve the details of a specific user by their ID. Which HTTP verb would you use and why?
+You want to update the entire information of a product in your inventory. Which HTTP verb would you use and why?
+You need to apply a partial update to a user's profile information (e.g., updating just the phone number). Which HTTP verb would you use and why?
+You need to add a new item to a user's shopping cart. Which HTTP verb would you use and why?
+You want to fetch a list of all orders placed by a specific user. Which HTTP verb would you use and why?
+You need to delete all items in a user's shopping cart. Which HTTP verb would you use and why?

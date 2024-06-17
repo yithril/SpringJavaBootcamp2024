@@ -1,0 +1,15 @@
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\bin\Debug\net8.0\OurFirstApp.exe
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\bin\Debug\net8.0\OurFirstApp.deps.json
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\bin\Debug\net8.0\OurFirstApp.runtimeconfig.json
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\bin\Debug\net8.0\OurFirstApp.dll
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\bin\Debug\net8.0\OurFirstApp.pdb
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.AssemblyInfoInputs.cache
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.AssemblyInfo.cs
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.csproj.CoreCompileInputs.cache
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.sourcelink.json
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.dll
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\refint\OurFirstApp.dll
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.pdb
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\OurFirstApp.genruntimeconfig.cache
+C:\Coding\Bootcamps\SpringJavaBootcamp2024\Week10\4.Thursday\OurFirstApp\OurFirstApp\obj\Debug\net8.0\ref\OurFirstApp.dll
