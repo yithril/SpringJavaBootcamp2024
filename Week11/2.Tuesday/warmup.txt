@@ -1,0 +1,24 @@
+Analyze the following URLs and answer the corresponding questions. Each URL is designed to help you understand different aspects of web API requests, including resource identification, the use of HTTP verbs, and the roles of URI parameters and query strings. Discuss what action you think is being performed and why.
+
+    URL: GET /books
+        Question: What action is this request likely performing? What does the 'books' part of the URL represent?
+
+    URL: POST /users
+        Question: What does this request typically do in a web application? Consider what kind of data might be included in the request body.
+
+    URL: GET /movies?genre=comedy&year=2021
+        Question: How do the query parameters genre and year modify this request? What specific data is the client asking for?
+
+    URL: PUT /users/123
+        Question: Explain the purpose of the number 123 in this URL. How is this request different from a PUT request to just /users?
+
+    URL: DELETE /orders/456/items?productId=789
+        Question: In this more complex URL, identify the action being performed. How do the URI parameter (456) and the query string parameter (productId=789) work together?
+
+    URL: PATCH /blogs/42?published=true
+        Question: What is likely being changed in this request? Discuss how the URI parameter and the query string parameter interact in this scenario.
+
+    URL: GET /search?q=java+programming
+        Question: This is a common pattern in search functionalities. What is the significance of the query parameter q here? What kind of response might you expect from the server?
+
+Remember, each part of the URL and the HTTP verb used can give you insights into what the client is requesting and how the server might respond. Consider these elements carefully in your analysis.
