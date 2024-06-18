@@ -1,7 +1,9 @@
 package com.example.our_first_api.controllers;
 
 import com.example.our_first_api.models.Recipe;
+import com.example.our_first_api.models.dto.RecipeDTO;
 import com.example.our_first_api.repositories.RecipeRepository;
+import com.example.our_first_api.services.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -17,6 +19,9 @@ public class RecipeController {
     @Autowired
     private RecipeRepository recipeRepository;
 
+    @Autowired
+    private RecipeService recipeService;
+
     @GetMapping
     public ResponseEntity<List<Recipe>> getRecipes(){
         var recipes = recipeRepository.findAll();
@@ -24,10 +29,8 @@ public class RecipeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Recipe> getRecipeById(@PathVariable Long id){
-        Optional<Recipe> recipe = recipeRepository.findById(id);
-
-        return ResponseEntity.of(recipe);
+    public ResponseEntity<RecipeDTO> getRecipeById(@PathVariable Long id){
+        return new ResponseEntity<>(recipeService.getRecipeById(id), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
