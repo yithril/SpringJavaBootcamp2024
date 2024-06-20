@@ -1,6 +1,7 @@
 package com.example.our_first_api.services;
 
 import com.example.our_first_api.exceptions.ResourceNotFoundException;
+import com.example.our_first_api.megacomplicated.RecipeSpecification;
 import com.example.our_first_api.models.Recipe;
 import com.example.our_first_api.models.dto.CreateRecipeDTO;
 import com.example.our_first_api.models.dto.RecipeDTO;
@@ -9,6 +10,7 @@ import com.example.our_first_api.models.mapper.RecipeMapper;
 import com.example.our_first_api.models.params.RecipeSearchParams;
 import com.example.our_first_api.repositories.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -79,4 +81,16 @@ public class RecipeService {
 
         return recipes.stream().map(RecipeMapper::toDTO).toList();
     }
+    //MEGA HARD STUFF
+    /*
+        public List<RecipeDTO> searchRecipes(RecipeSearchParams params) {
+        Specification<Recipe> spec = Specification.where(RecipeSpecification.instructionsContains(params.getInstructions()))
+                .and(RecipeSpecification.nameContains(params.getName()))
+                .and(RecipeSpecification.cookingTimeBetween(params.getMinCookingTime(), params.getMaxCookingTime()));
+        List<Recipe> recipes = recipeRepository.findAll(spec);
+        return recipes.stream()
+                .map(RecipeMapper::toDTO)
+                .collect(Collectors.toList());
+    }
+     */
 }
