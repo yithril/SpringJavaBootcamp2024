@@ -1,0 +1,33 @@
+Spring Boot Warmup Quiz
+
+    Autowired Annotation:
+        What is the purpose of the @Autowired annotation in Spring Boot?
+        Can you use @Autowired with a constructor? If so, how?
+
+    Service and Repository:
+        What is the difference between a service class and a repository class in Spring Boot?
+        Why do we use the @Service and @Repository annotations?
+
+    JPA Repository:
+        What is the purpose of the JPA repository in Spring Boot?
+        How do you create a custom query method in a JPA repository?
+
+    Validation:
+        How do you validate an incoming request in Spring Boot?
+        What annotation would you use to ensure that a string is not empty?
+
+    Path Parameters:
+        How do you define and access a path parameter in a Spring Boot controller?
+        Give an example of a method in a controller that uses a path parameter.
+
+    CRUD Functions:
+        List the CRUD functions you typically implement in a Spring Boot API.
+        Provide a simple example of a POST method in a controller for creating a new resource.
+
+    Controller Advice:
+        What is @ControllerAdvice used for in Spring Boot?
+        How would you create a global exception handler for a ResourceNotFoundException?
+
+    Response Entity:
+        What is ResponseEntity in Spring Boot, and why is it useful?
+        Provide an example of how to return a ResponseEntity with a status of 200 OK.
