@@ -4,6 +4,7 @@ import com.example.our_first_api.models.Recipe;
 import com.example.our_first_api.models.dto.CreateRecipeDTO;
 import com.example.our_first_api.models.dto.RecipeDTO;
 import com.example.our_first_api.models.dto.UpdateRecipeDTO;
+import com.example.our_first_api.models.params.RecipeSearchParams;
 import com.example.our_first_api.repositories.RecipeRepository;
 import com.example.our_first_api.services.RecipeService;
 import jakarta.validation.Valid;
@@ -52,5 +53,12 @@ public class RecipeController {
        var recipe = recipeService.updateRecipe(dto, id);
 
        return new ResponseEntity<>(recipe, HttpStatus.OK);
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<RecipeDTO>> searchRecipes(@ModelAttribute RecipeSearchParams searchParams){
+        var recipeDTOs = recipeService.searchRecipes(searchParams);
+
+        return new ResponseEntity<>(recipeDTOs, HttpStatus.OK);
     }
 }

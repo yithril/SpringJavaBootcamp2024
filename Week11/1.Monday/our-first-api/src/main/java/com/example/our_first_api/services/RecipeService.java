@@ -6,12 +6,15 @@ import com.example.our_first_api.models.dto.CreateRecipeDTO;
 import com.example.our_first_api.models.dto.RecipeDTO;
 import com.example.our_first_api.models.dto.UpdateRecipeDTO;
 import com.example.our_first_api.models.mapper.RecipeMapper;
+import com.example.our_first_api.models.params.RecipeSearchParams;
 import com.example.our_first_api.repositories.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class RecipeService {
@@ -55,5 +58,25 @@ public class RecipeService {
         Recipe updatedRecipe = recipeRepository.save(recipe);
 
         return RecipeMapper.toDTO(updatedRecipe);
+    }
+
+    public List<RecipeDTO> searchRecipes(RecipeSearchParams searchParams){
+        List<Recipe> recipes = new ArrayList<>();
+        if(searchParams.getName() == null && searchParams.getInstructions() == null
+                && searchParams.getMinCookingTime() == null && searchParams.getMaxCookingTime() == null){
+            recipes = recipeRepository.findAll();
+        }
+        else if(searchParams.getMinCookingTime() != null && searchParams.getMaxCookingTime() != null){
+            recipes = recipeRepository.findByCookingTimeInMinutesBetween(searchParams.getMinCookingTime(),
+                                                                         searchParams.getMaxCookingTime());
+        }
+        else if(searchParams.getName() != null){
+            recipes = recipeRepository.findByNameContainingIgnoreCase(searchParams.getName());
+        }
+        else {
+            recipes = recipeRepository.findByInstructionsContainingIgnoreCase(searchParams.getInstructions());
+        }
+
+        return recipes.stream().map(RecipeMapper::toDTO).toList();
     }
 }
