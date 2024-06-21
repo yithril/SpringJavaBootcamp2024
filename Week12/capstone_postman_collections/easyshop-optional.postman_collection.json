@@ -1,0 +1,424 @@
+{
+	"info": {
+		"_postman_id": "5a975740-d0bb-4dad-b049-7d65b9e90cfe",
+		"name": "easyshop-optional",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1479778"
+	},
+	"item": [
+		{
+			"name": "Login - new user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"userToken\", pm.response.json().token);\r",
+							"\r",
+							"pm.test(\"User Login should create token\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.be.ok;\r",
+							"    pm.response.to.be.withBody;\r",
+							"    pm.response.to.have.jsonBody(\"token\");\r",
+							"    pm.expect(pm.environment.get(\"userToken\")).to.not.equal(\"\");\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"{{newUserName}}\",\r\n  \"password\": \"{{newUserPassword}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile - new user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Get UserProfile should succeed\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/profile",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile - new user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Update UserProfile should succeed\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 3,\r\n    \"firstName\": \"Joe\",\r\n    \"lastName\": \"Tester\",\r\n    \"phone\": \"888-456-9876\",\r\n    \"email\": \"j.tester@test.net\",\r\n    \"address\": \"123 test st\",\r\n    \"city\": \"some city\",\r\n    \"state\": \"ST\",\r\n    \"zip\": \"12121\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/profile",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var items = pm.response.json().items;\r",
+							"var total = pm.response.json().total;\r",
+							"\r",
+							"pm.test('Cart should be empty', function () {\r",
+							"    pm.expect(items).to.be.empty;\r",
+							"    pm.expect(total).to.equal(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cart",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product to Cart - with auth - should succeed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var items = pm.response.json().items;\r",
+							"var total = pm.response.json().total;\r",
+							"\r",
+							"pm.test(\"Add to cart logged in should succeed\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(items).to.not.be.empty;\r",
+							"    pm.expect(total).to.equal(149.99);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cart/products/12",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart",
+						"products",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add another Product to Cart - with auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var items = pm.response.json().items;\r",
+							"var total = pm.response.json().total;\r",
+							"\r",
+							"pm.test(\"Add additional to cart logged in should succeed\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(items).to.not.be.empty;\r",
+							"    pm.expect(total).to.equal(179.98);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cart/products/21",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart",
+						"products",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var items = pm.response.json().lineItems;\r",
+							"\r",
+							"pm.test(\"Create should return order details\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(items.length).to.equal(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart After Checkout",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var items = pm.response.json().items;\r",
+							"var total = pm.response.json().total;\r",
+							"\r",
+							"pm.test(\"Get cart logged in should succeed\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(items).to.be.empty;\r",
+							"    pm.expect(total).to.equal(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{userToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/cart",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "userToken",
+			"value": "userToken",
+			"type": "string"
+		},
+		{
+			"key": "adminToken",
+			"value": "adminToken",
+			"type": "string"
+		},
+		{
+			"key": "newCategoryId",
+			"value": "3",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "newUserName",
+			"value": "gary",
+			"type": "string"
+		},
+		{
+			"key": "newUserPassword",
+			"value": "thePass",
+			"type": "string"
+		}
+	]
+}

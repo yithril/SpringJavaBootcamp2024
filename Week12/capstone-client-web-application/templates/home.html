@@ -1,0 +1,55 @@
+<div class="filter-box">
+    <h3>Filter</h3>
+
+    <div class="form-floating mb-3">
+        <select name="" id="category-select" class="form-select"
+            onchange="setCategory(this)"
+        >
+            <option value="0">Show All</option>
+        </select>
+        <label for="category-select">Category</label>
+    </div>
+    <div>
+        <label for="min-price" class="form-label">Minimum Price: $ <span id="min-price-display">0</span></label>
+        <input type="range" class="form-range" id="min-price" min="0" max="1500" value="0" onchange="setMinPrice(this)">
+    </div>
+    <div>
+        <label for="max-price" class="form-label">Minimum Price: $ <span id="max-price-display">1500</span></label>
+        <input type="range" class="form-range" id="max-price" min="0" max="1500" value="1500" onchange="setMaxPrice(this)">
+    </div>
+
+    <div class="form-floating mb-3">
+        <select name="" id="color-select" class="form-select"
+                onchange="setColor(this)"
+        >
+            <option value="">Show All</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Brown</option>
+            <option>Burgundy</option>
+            <option>Charcoal</option>
+            <option>Clear</option>
+            <option>Dark BLue</option>
+            <option>Gray</option>
+            <option>Green</option>
+            <option>Khaki</option>
+            <option>Lavender</option>
+            <option>Maroon</option>
+            <option>Mint</option>
+            <option>Navy</option>
+            <option>Olive</option>
+            <option>Orange</option>
+            <option>Pink</option>
+            <option>Red</option>
+            <option>Silver</option>
+            <option>Tan</option>
+            <option>Teal</option>
+            <option>Turquoise</option>
+            <option>White</option>
+            <option>Yellow</option>
+        </select>
+        <label for="color-select">Color</label>
+    </div>
+
+</div>
+<div id="content" class="content"></div>
