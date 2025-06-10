@@ -77,6 +77,53 @@ public class ProductDao {
 
     //DELETE
     public void delete(int id){
-        String query = "";
+        String query = "DELETE FROM Products WHERE ProductID = ?";
+
+        try(Connection conn = DriverManager.getConnection(connectionString, userName, password);
+            PreparedStatement stmt = conn.prepareStatement(query)){
+
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+        }
+        catch(SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    //CREATE
+    public void create(Product product){
+        String query = "INSERT INTO products (ProductName, UnitPrice) VALUES(?, ?)";
+
+        try(Connection conn = DriverManager.getConnection(connectionString, userName, password);
+           PreparedStatement stmt = conn.prepareStatement(query)){
+
+            stmt.setString(1, product.getProductName());
+            stmt.setDouble(2, product.getUnitPrice());
+
+            //etc. Remember, you don't need to set the id, let SQL do it
+            stmt.executeUpdate();
+        }
+        catch(SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    //UPDATE
+    public void update(Product product){
+        String query = "UPDATE products SET ProductName = ?, UnitsInStock = ? WHERE ProductID = ?";
+
+        try(Connection conn = DriverManager.getConnection(connectionString, userName, password);
+           PreparedStatement stmt = conn.prepareStatement(query)){
+
+            //replace ? with actual data
+            stmt.setString(1, product.getProductName());
+            stmt.setInt(2, product.getUnitsInStock());
+            stmt.setInt(3, product.getProductId());
+
+            stmt.executeUpdate();
+        }
+        catch(SQLException ex){
+            ex.printStackTrace();
+        }
     }
 }
